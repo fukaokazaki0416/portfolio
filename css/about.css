@@ -143,11 +143,9 @@
 }
 @media (max-width:600px){
   .strongth .strongth-img:nth-child(1){
-    position:relative;
     left: 25px;
   }
   .strongth .strongth-img:nth-child(3){
-    position:relative;
     right: 25px;
   }
 
