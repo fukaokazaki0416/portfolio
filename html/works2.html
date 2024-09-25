@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ポートフォリオ</title>
+<link href="../css/style.css" rel="stylesheet" type="text/css">
+<link href="../css/works.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+  <a href="index.html"><img src="../img/logo.svg" alt=""/></a>
+    <div class="nav-button">
+    <span></span>
+        <span></span>
+<span></span>
+  </div>
+  <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#sec1">About</a></li>
+            <li><a href="#sec2">Skill</a></li>
+            <li><a href="#sec3">Works</a></li>
+        </ul>
+    </nav>
+     </header>
+    
+    <main>
+      <section class="works">
+        <h2>Overview<span class="text-small">概要</span></h2>
+        <div class="box">
+        <p class="independent">個人制作</p>
+      <h3>パジャマ専門店"DreamEase"</h3>
+    </div>
+      <div class="box-area">
+        <img src="../img/works-pajyama.png" width="600" height="450" alt=""/>
+        <div class="text">
+        <dl>
+          <dt>Type</dt>
+          <dd>Website</dd>
+          <dt>About</dt>
+          <dd>パジャマ専門店"DreamEase"サイト制作（仮想）</dd>
+          <dt>Schedule</dt>
+          <dd>企画・ワイヤーフレーム：1日<br>
+              デザイン：3日<br>
+              コーディング：5日</dd>
+          <dt>Tools</dt>
+          <dd>XD/Photoshop/Dreamweaver</dd>
+        </dl>
+      </div>
+    </div>
+      </section>
+      <section class="process">
+        <h2>Process<span class="text-small">プロセス</span></h2>
+        <p class="googleslide"><iframe src="https://docs.google.com/presentation/d/1_DwKfxL7DV7uRz98sMicLpVbrWL536JfQLCLy4lRFgs/embed?start=false&loop=false&delayms=5000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+       <p class="text-small">全9ページ</p>
+      </section>
+      <section class="design">
+        <h2>Design<span class="text-small">完成図</span></h2>
+        <div class="box-area">
+          <div class="box">
+          <p><img src="../img/pajyama-furu.jpg" width="500px" height="auto"/></p>
+          </div>
+          <div class="box">
+          <p><img src="../img/pajyama-responsive.jpg" width="250px" height="auto"/></p>
+          </div>
+        </div>
+      </section>
+        </main>
+    
+        <footer>
+          <div class="logo"> <a href="index.html"><img src="../img/header_logo.png" width="152" height="48" alt=""/></a> 
+          </div>
+          <div class="box-area">
+        <ul>
+            <li><a href="#sec1">About</a></li>
+            <li><a href="#sec2">Skill</a></li>
+            <li><a href="#sec3">Works</a></li>
+        </ul>
+          <div class="box">
+             <p><img src="../img/Instagram_logo.png" width="50" height="50" alt=""/> <img src="../img/x_logo.png" width="50" height="51" alt=""/></p>
+            <p class="copyright">Copyright&copy;Fuka Okazaki</p>
+            </div>
+          </div>
+</footer>
+    <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
+
+        <script>
+
+          $(function(){
+
+            //.nav-buttonをクッリクしたときの設定
+
+            $(".nav-button").on("click",function(){
+
+              $("body").toggleClass("menu-open");
+
+            });
+
+
+
+            $(document).on("click",".menu-open nav a",function(){
+
+              $(".nav-button").trigger("click");
+
+            });
+
+          });
+
+        </script>
+</body>
+</html>
