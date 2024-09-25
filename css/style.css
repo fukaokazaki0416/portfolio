@@ -2,8 +2,9 @@
 @import url("about.css");
 *, ::before, ::after{
     margin: 0;
-    paddeing: 0;
+    padding: 0;
     box-sizing: border-box;
+    /* outline: 1px solid red; */
 }
 html{
     font-size: 62.5%;
@@ -58,13 +59,12 @@ header{
 header nav a{
     display: block;
     color: #627962;
-    margin: 10px 20px;
     text-align: center;
 }
 
 header nav a{
   position: relative;
-  padding-bottom: 5px;
+  padding: 5px 20px;
 }
 header nav a:hover::before {
   content: "";
@@ -140,7 +140,6 @@ section{
 a.btn_27 {
 	display: block;
 	text-align: center;
-	vertical-align: middle;
 	text-decoration: none;
 	width: 200px;
     margin-left: auto;
@@ -230,6 +229,10 @@ a.btn_27:hover:after {
   font-size: 1.4rem;
   opacity: 0.5;
 }
+.sec3 a{
+  color: #627962;
+}
+/* --footer-- */
 footer{
   background-color: #627962;
   color: #fff6ec;
@@ -332,7 +335,8 @@ footer a{
 
 @media (max-width:600px){
   header img{
-    margin-left: 15px;
+    margin-left: 10px;
+    width: 100px;
   }
 
   /* ハンバーガーメニュー */
@@ -359,7 +363,7 @@ footer a{
     }
     header nav a{
       font-size: 30px;
-      padding: 30px 0;
+      margin: 30px 0;
      color: #627962;
     }
     header h1{
@@ -378,6 +382,7 @@ footer a{
      background: #627962;;
      position: absolute;
      left: 20px;
+     transition: 0.5s;
     }
     .nav-button span:nth-child(1){
       top: 12px;
@@ -421,5 +426,7 @@ h2{
 }
 footer{
   margin-top: 50px;
+  padding-top: 2rem;
+  padding-bottom: 0;
 }
 }

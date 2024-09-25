@@ -37,6 +37,7 @@
 }
 .works dd{
     margin-bottom: 15px;
+    word-break: break-all;
 }
 .process h2,.design h2{
     margin-top: 100px;
@@ -72,6 +73,7 @@
     }
     .works .text{
         margin-top: 30px;
+        margin-left: 0;
     }
 }
 
