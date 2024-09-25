@@ -21,6 +21,10 @@ body{
     line-height: 1.8;
     background-color: #fff6ec;
     font-size: 1.8rem;
+    font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
 }
 a{
     text-decoration: none;    
