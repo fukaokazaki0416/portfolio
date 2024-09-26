@@ -35,20 +35,12 @@ a:hover{
 ul{
     list-style-type: none;
 }
-.text-small{
-    font-size: 2.4rem;
-  margin-left: 2rem;
-}
+
 header img{
   width: 120px;
   margin-left: 50px;
 }
-header nav{
-  margin-right: 50px;
-}
-header nav ul{
-  display: flex;
-}
+
 header{
   display: flex;
   justify-content: space-between;
@@ -59,6 +51,14 @@ header{
     z-index: 1;
     transition: 1s;
     background-color: rgba(255,246,236,0.5);
+}
+
+/* ナビゲーション */
+header nav{
+  margin-right: 50px;
+}
+header nav ul{
+  display: flex;
 }
 header nav a{
     display: block;
@@ -89,14 +89,7 @@ header nav a:hover{
   text-decoration: none;
 }  
 
-h2{
-  text-align: center;
-  font-size: 9rem;
-  margin-bottom: 2rem;
-  font-family: "Nanum Myeongjo", serif;
-  font-weight: 800;
-  font-style: normal;
-}
+
 main{
   padding-top: 80px;
 }
@@ -115,8 +108,21 @@ main{
     left: 50%;
    padding-right: 30px;
 }
+
 section{
   padding: 0 15px;
+}
+h2{
+  text-align: center;
+  font-size: 9rem;
+  margin-bottom: 2rem;
+  font-family: "Nanum Myeongjo", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.text-small{
+  font-size: 2.4rem;
+margin-left: 2rem;
 }
 .sec1{
    max-width: 1120px;
@@ -266,8 +272,10 @@ footer .box img{
   margin-right: 0.5rem;
 }
 footer .logo{
-  text-align: center;
-  margin-bottom: 1.5rem;
+    max-width: 100px;
+  margin: 0 auto 1.5rem auto;
+  padding: 3px 5px;
+  background-color: #fff6ec;
 }
 footer a{
    color: #fff6ec;
