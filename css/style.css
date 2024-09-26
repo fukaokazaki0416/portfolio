@@ -242,6 +242,10 @@ a.btn_27:hover:after {
 .sec3 a{
   color: #627962;
 }
+.sec3 .url{
+  text-decoration: underline;
+}
+
 /* --footer-- */
 footer{
   background-color: #627962;
@@ -254,7 +258,7 @@ footer .box-area{
   display: flex;
   justify-content: center;
 }
-fooer .snslogo{
+footer .snslogo{
   display: flex;
 }
 footer li{
