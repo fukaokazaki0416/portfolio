@@ -245,6 +245,10 @@ a.btn_27:hover:after {
 .sec3 .url{
   text-decoration: underline;
 }
+.sec3 a:hover{
+  text-decoration: none;
+  opacity: 0.8;
+}
 
 /* --footer-- */
 footer{
