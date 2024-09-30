@@ -263,14 +263,13 @@ footer{
 }
 footer .box-area{
   display: flex;
-  justify-content: center;
 }
 footer li{
-  margin-right: 5rem;
+  padding: 0 3rem;
   margin-bottom: 1.5rem;
 }
 footer .box{
-  margin-left: 5rem;
+  padding: 0 3rem;
   text-align: center;
   align-content: center;
 }
@@ -462,5 +461,9 @@ footer{
   margin-top: 50px;
   padding-top: 2rem;
   padding-bottom: 0;
+}
+footer .box img{
+  width: 35px;
+  height: auto;
 }
 }
