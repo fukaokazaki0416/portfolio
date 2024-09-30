@@ -279,6 +279,9 @@ footer .box img{
   margin-left: 0.5rem;
   margin-right: 0.5rem;
 }
+footer .box a:hover{
+  opacity: 0.7;
+}
 footer .logo{
     max-width: 100px;
   margin: 0 auto 1.5rem auto;
