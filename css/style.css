@@ -15,7 +15,6 @@ img{
     max-width: 100%;
     height: auto;
 }
-
 body{
     color: #4b4d37;
     line-height: 1.8;
@@ -36,6 +35,7 @@ ul{
     list-style-type: none;
 }
 
+/* ヘッダー */
 header img{
   width: 120px;
   margin-left: 50px;
@@ -89,7 +89,7 @@ header nav a:hover{
   text-decoration: none;
 }  
 
-
+/* メインイメージ */
 main{
   padding-top: 80px;
 }
@@ -109,6 +109,7 @@ main{
    padding-right: 30px;
 }
 
+/* section */
 section{
   padding: 0 15px;
 }
@@ -124,6 +125,8 @@ h2{
   font-size: 2.4rem;
 margin-left: 2rem;
 }
+
+/* sectionアバウト */
 .sec1{
    max-width: 1120px;
   margin: 0 auto;
@@ -134,9 +137,6 @@ margin-left: 2rem;
 }
 .sec1 strong{
   font-size: 3rem;
-}
-.sec1 p:nth-child(2){
-  margin-top: 20px;
 }
 .sec1 .text{
   margin-left: 6rem;
@@ -195,6 +195,7 @@ a.btn_27:hover:after {
   transition: border-color 0s ease-out 0.2s, width 0.15s ease-out 0.2s, height 0.15s ease-out 0.3s;
 }
 
+/* sectionスキル */
 .sec2{
   padding-top: 50px;
   padding-bottom: 70px;
@@ -221,6 +222,8 @@ a.btn_27:hover:after {
 .tools{
   margin-top: 5rem;
 }
+
+/* sectionワークス */
 .sec3{
   max-width: 1120px;
   margin: 0 auto;
@@ -229,7 +232,7 @@ a.btn_27:hover:after {
 .sec3 .box-area{
   display: flex;
   flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .sec3 img{
   height: 200px;
@@ -296,13 +299,18 @@ footer a{
   html{
     scroll-padding-top: 60px;
   }
+
+  /* メインイメージ */
      .mv-catch{
         margin: auto;
         max-width: 80%;
     }
+
   h2{
      margin-bottom: 0.5rem;
   }
+
+    /* sectionアバウト */
    .sec1{
      margin-top: 30px;
      padding-top: 0;
@@ -327,6 +335,8 @@ footer a{
     margin-right: auto;
     margin-left: auto;
   }
+
+  /* sectionスキル */
   .sec2 img{
     display: none;
   }
@@ -345,9 +355,8 @@ footer a{
   .sec2{
     padding-top: 0;
   }
-  .sec3 .box-area{
-   justify-content: space-around;
-}
+
+  /* sectionワークス */
 .sec3{
   padding-top: 0;
 }
@@ -440,10 +449,18 @@ h2{
   font-size: 2rem;
 }
 
+/* sectionアバウト */
+.sec1 img{
+  width: 250px;
+}
+
+/* sectionワークス */
 .sec3 .box-area{
   display: block;
   text-align: center;
 }
+
+/* フッター */
 footer{
   margin-top: 50px;
   padding-top: 2rem;

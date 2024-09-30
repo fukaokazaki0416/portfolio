@@ -1,9 +1,9 @@
 @charset "UTF-8";
 .works,.process,.design{
     max-width: 1120px;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
+/* sectionワークス */
 .works img{
     object-fit: contain;
     aspect-ratio: 600/315;
@@ -40,6 +40,7 @@
     word-break: break-all;
 }
 
+/* sectionプロセス */
 .process h2,.design h2{
     margin-top: 100px;
 }
@@ -60,6 +61,7 @@
     text-align: center;
 }
 
+/* sectionデザイン */
 .design .box-area{
     display: flex;
     flex-wrap: wrap;
@@ -85,8 +87,16 @@
     .design img{
         margin-top: 30px;
     }
+    .design img:nth-child(1){
+        margin-top: 0px;
+    }
     .design .onlyone{
         margin-top: 0;
     }
 }
 
+@media (max-width:900px){
+.process h2,.design h2{
+    margin-top: 50px;
+}
+}
