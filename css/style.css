@@ -263,6 +263,7 @@ footer{
 }
 footer .box-area{
   display: flex;
+  justify-content: center;
 }
 footer li{
   padding: 0 3rem;
