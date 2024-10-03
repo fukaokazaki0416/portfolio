@@ -108,7 +108,7 @@ main{
 .mv-catch{
   position: absolute;
     top: 20%;
-    left: 50%;
+    left: 40%;
    padding-right: 30px;
 }
 
@@ -298,6 +298,31 @@ footer a{
     font-size: 1.6rem;
 }
 
+/* インビュー */
+.inview{
+opacity: 0;
+transform: translateY(100px);
+transition: 1s;
+}
+.inview.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.mv-image .inview{
+  transition: 3s;
+  transform: translateY(0);
+}
+.in1{
+  transition: 1s;
+}
+.in2{
+  transition: 1.5s;
+}
+.in3{
+  transition: 2s;
+}
+
 @media (max-width:900px){
   html{
     scroll-padding-top: 60px;
@@ -398,8 +423,8 @@ footer a{
       margin: 30px 0;
      color: #627962;
     }
-    header h1{
-      z-index: 1;
+    header img{
+      z-index: 100;
       line-height: 1;
     }
     .nav-button{

@@ -79,16 +79,14 @@
         <h2>Strongth<span class="text-small">私の強み</span></h2> 
           <div class="img-area">
            <div class="strongth-img">
-           <img src="../img/proposal.png" alt="Proposal ability　提案力"/>
-          </div>
-          <!-- <div class="strong-box"> -->
-          <div class="strongth-img">
-            <img src="../img/communication.png" alt="communication　コミュニケーション"/>
+           <img class="inview in1" src="../img/proposal.png" alt="Proposal ability　提案力"/>
           </div>
           <div class="strongth-img">
-            <img src="../img/spirit.png" alt="Spirit of service　奉仕の精神"/>
+            <img class="inview in2" src="../img/communication.png" alt="communication　コミュニケーション"/>
           </div>
-        <!-- </div> -->
+          <div class="strongth-img">
+            <img class="inview in3" src="../img/spirit.png" alt="Spirit of service　奉仕の精神"/>
+          </div>
             </div>
 <div class="box-area">
     <div class="box">
@@ -137,10 +135,15 @@
           </div>
 </footer>
     <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
+    <script type="text/javascript" src="../js/jquery.inview.min.js"></script>
 
         <script>
 
           $(function(){
+            //インビュー
+            $(".inview").on("inview",function(){
+             $(this).addClass("fade-in");
+          });
 
             //.nav-buttonをクッリクしたときの設定
 

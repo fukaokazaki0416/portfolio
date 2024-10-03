@@ -28,12 +28,13 @@
             <li><a href="index.html#sec3">Works</a></li>
         </ul>
     </nav>
+
      </header>
     <main>
          <div class="mv-image">
            <img class="mv" src="../img/main.jpg" width="1920" height="850" alt=""/>
       
-         <h1 class="mv-catch"><img src="../img/mv.png" width="755" height="206" alt="FukaOkazaki
+      <h1 class="mv-catch inview"><img src="../img/mv.png" width="755" height="206" alt="FukaOkazaki
 Portfolio"/></h1>
            </div>
      <section class="sec1" id="sec1">
@@ -86,63 +87,63 @@ Coding"/>
             <div class="box-area">
             <div class="box">
               <a href="works1.html">
-                <img src="../img/works1.png" width="354" height="200">
+                <img class="inview" src="../img/works1.png" width="354" height="200">
             <P class="works-list">Website</P>
             <p class="url">【仮想】化粧品サイト"TimeCera"</p>
           </a>
               </div>
              <div class="box">
               <a href="works2.html">
-            <img src="../img/works2.png" width="354" height="200">
+            <img class="inview" src="../img/works2.png" width="354" height="200">
             <P class="works-list">Website</P>
             <p class="url">【仮想】パジャマサイト"DreamEase"</p>
           </a>
                </div>
              <div class="box">
             <a href="works3.html">
-            <img src="../img/works3.png" width="354" height="200">
+            <img class="inview" src="../img/works3.png" width="354" height="200">
             <P class="works-list">Website</P>
             <p class="url">【学校課題】"LiadingCompany"</p>
             </a>
                </div>
              <div class="box">
               <a href="works4.html">
-            <img src="../img/works4.png" width="354" height="200">
+            <img class="inview" src="../img/works4.png" width="354" height="200">
             <P class="works-list">icarch</P>
             <p class="url">【仮想】Webmagazine"OKAFU"</p>
              </a>
                </div>
              <div class="box">
               <a href="works5.html">
-              <img src="../img/works5.png" width="354" height="200">
+              <img class="inview" src="../img/works5.png" width="354" height="200">
             <P class="works-list">icarch</P>
             <p class="url">【仮想】Webmagazine"OKAFU"</p>
               </a>
               </div>
              <div class="box">
               <a href="works6.html">
-              <img src="../img/works6.png" width="354" height="200">
+              <img class="inview" src="../img/works6.png" width="354" height="200">
             <P class="works-list">banner</P>
             <p class="url">【仮想】ファッション"suumersale"</p>
               </a>
               </div>
              <div class="box">
               <a href="works7.html">
-              <img src="../img/works7.png" width="354" height="200">
+              <img class="inview" src="../img/works7.png" width="354" height="200">
             <P class="works-list">banner</P>
             <p class="url">【仮想】転職サイト</p>
               </a>
                </div>
              <div class="box">
               <a href="works8.html">
-            <img src="../img/works8.png" width="354" height="200">
+            <img class="inview" src="../img/works8.png" width="354" height="200">
             <P class="works-list">banner</P>
             <p class="url">【仮想】Instagram選手紹介</p>
           </a>
                </div>
            <div class="box">
               <a href="works9.html">
-            <img src="../img/works9.png" width="354" height="200">
+            <img class="inview" src="../img/works9.png" width="354" height="200">
             <P class="works-list">banner</P>
             <p class="url">【仮想】Instagram選手紹介</p>
           </a>
@@ -168,8 +169,15 @@ Coding"/>
             </div>
         </footer>
         <script type="text/javascript" src="../js/jquery-3.7.1.min.js"></script>
+        <script type="text/javascript" src="../js/jquery.inview.min.js"></script>
+
         <script>
           $(function(){
+            //インビュー
+            $(".inview").on("inview",function(){
+             $(this).addClass("fade-in");
+          });
+
             //.nav-buttonをクッリクしたときの設定
             $(".nav-button").on("click",function(){
               $("body").toggleClass("menu-open");
