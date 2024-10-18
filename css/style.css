@@ -200,10 +200,9 @@ a.btn_27:hover:after {
 
 /* sectionスキル */
 .sec2{
-  padding-top: 50px;
-  padding-bottom: 70px;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  margin-top: 60px;
   background-color: #627962;
   color: #fff6ec;
 }
@@ -230,7 +229,7 @@ a.btn_27:hover:after {
 .sec3{
   max-width: 1120px;
   margin: 0 auto;
-  padding-top: 4rem;
+  padding-top: 30px;
 }
 .sec3 .box-area{
   display: flex;
@@ -382,6 +381,7 @@ transition: 1s;
   }
   .sec2{
     padding-top: 0;
+    padding-bottom: 30px;
   }
 
   /* sectionワークス */
@@ -490,8 +490,8 @@ h2{
 
 /* フッター */
 footer{
-  margin-top: 50px;
-  padding-top: 2rem;
+  margin-top: 15px;
+  padding-top: 15px;
   padding-bottom: 0;
 }
 footer .box img{

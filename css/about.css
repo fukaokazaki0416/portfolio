@@ -1,4 +1,6 @@
 @charset "UTF-8";
+
+/* sectionアバウト */
 .about{
     max-width: 1120px;
     margin: 0 auto;
@@ -20,13 +22,13 @@
 .about .aboutimage{
   object-fit: cover;
   width: 500px;
-  height: 350px;
 }
+
+/* sctionいままでのこと */
 .career{
     padding-top: 50px;
-  padding-bottom: 80px;
-  margin-bottom: 20px;
-  margin-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 30px;
   background-color: #627962;
   color: #fff6ec;
 }
@@ -65,9 +67,11 @@
     top: 40px;
     border-radius: 100%;
 }
+
+/* sectionつよみ */
 .strongth{
     max-width: 1120px;
-    margin: 80px auto 0px auto;
+    margin: 30px auto 0px auto;
 }
 
 /* 強みのグラフ */
@@ -84,8 +88,13 @@
   position:relative;
   right: 42px;
 }
+
 .strongth .box{
   display: flex;
+}
+.strongth .box-area img{
+  aspect-ratio: 340/207;
+  object-fit:contain;
 }
 .strongth .box:nth-child(2){
   flex-direction: row-reverse;
@@ -113,6 +122,10 @@
     margin-right: 30px;
 }
 @media (max-width:900px){
+  /* sectionアバウト */
+  .about{
+    padding-top: 30px;
+  }
   .about p:nth-child(1){
     text-align: center;
   }
@@ -123,6 +136,16 @@
     .about .box-area{ 
       flex-wrap: wrap;
       justify-content: center;
+}
+/* section今までのこと */
+.career{
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/* section 強み */
+.strongth{
+  margin-top: 15px;
 }
   .strongth .textbefore{
   display: block;
